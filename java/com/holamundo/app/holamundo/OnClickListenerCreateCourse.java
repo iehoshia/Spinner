@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +22,7 @@ import java.util.List;
  */
 public class OnClickListenerCreateCourse implements View.OnClickListener {
     Spinner editTextCourseTeacher;
+
     @Override
     public void onClick(View v) {
         final Context context = v.getContext();
