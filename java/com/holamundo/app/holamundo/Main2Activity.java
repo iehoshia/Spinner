@@ -29,17 +29,19 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void mostrarCourse(View view) {
-
         Intent in= new Intent(Main2Activity.this, CourseActivity.class);
         startActivity(in);
-
-
     }
-    public  void mostrarSpinner(View view){
 
+    public  void mostrarSpinner(View view){
        Intent in = new Intent(Main2Activity.this, SpinnerTestActivity.class);
         startActivity(in);
     }
+public void mostrarMatricula(View view){
+    Intent in= new Intent(Main2Activity.this,StudentCourseActivity.class);
+    startActivity(in);
+
+}
 
 
 }

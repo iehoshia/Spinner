@@ -35,4 +35,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/editTextTeacherCity"
         android:hint="Teacher City" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:id="@+id/button14" />
 </LinearLayout>

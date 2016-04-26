@@ -28,7 +28,7 @@ public class OnLongClickListenerTeacherRecord implements View.OnLongClickListene
                         }
                         else if (item == 1) {
 
-                            boolean deleteSuccessful = new TableControllerTeacher(context).delete(Integer.parseInt(id));
+                            boolean deleteSuccessful = new TableControllerTeacher((AddCourseActivity) context).delete(Integer.parseInt(id));
 
                             if (deleteSuccessful){
                                 Toast.makeText(context, "Teacher record was deleted.", Toast.LENGTH_SHORT).show();
@@ -45,7 +45,7 @@ public class OnLongClickListenerTeacherRecord implements View.OnLongClickListene
     }
 
     public void editRecord(final int teacherId) {
-        final TableControllerTeacher tableControllerTeacher = new TableControllerTeacher(context);
+        final TableControllerTeacher tableControllerTeacher = new TableControllerTeacher((AddCourseActivity) context);
         ObjectTeacher objectTeacher = tableControllerTeacher.readSingleRecord(teacherId);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final View formElementsView = inflater.inflate(R.layout.teacher_input_form, null, false);

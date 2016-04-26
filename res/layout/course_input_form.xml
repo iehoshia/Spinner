@@ -29,4 +29,11 @@
         android:id="@+id/spinner2"
         android:layout_weight="0.11" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="agregar"
+        android:id="@+id/button15"
+        android:layout_gravity="center_horizontal" />
+
 </LinearLayout>

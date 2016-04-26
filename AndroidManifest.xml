@@ -23,10 +23,16 @@
             </meta-data>
         </activity>
         <activity android:name=".TeacherActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.holamundo.app.holamundo.MainActivity" >
+            </meta-data>
         </activity>
         <activity android:name=".CourseActivity" >
-        </activity>
-        <activity android:name=".OnClickListenerCreateCourse" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.holamundo.app.holamundo.MainActivity" >
+            </meta-data>
         </activity>
         <activity android:name=".Main2Activity" >
             <intent-filter>
@@ -36,6 +42,38 @@
             </intent-filter>
         </activity>
         <activity android:name=".SpinnerTestActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.holamundo.app.holamundo.MainActivity" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".AddTeacherActivity"
+            android:label="@string/title_activity_add_teacher"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.holamundo.app.holamundo.TeacherActivity" />
+        </activity>
+        <activity
+            android:name=".AddCourseActivity"
+            android:label="@string/title_activity_add_course"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.holamundo.app.holamundo.CourseActivity" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".StudentCourseActivity"
+            android:label="@string/title_activity_student_course"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AddStudentCourseActivity"
+            android:label="@string/title_activity_add__student_course"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

@@ -22,15 +22,18 @@ public class SpinnerTestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spinner_test);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         spinner=(Spinner)findViewById(R.id.spinner);
         button=(Button)findViewById(R.id.button);
         editText=(EditText) findViewById(R.id.editText);
 
-        listTeacher();
+        //listTeacher();
 
 
     }
+    /*
 
     private void listTeacher() {
         List<ObjectTeacher> teachers = new TableControllerTeacher(this).read();
@@ -48,7 +51,7 @@ public class SpinnerTestActivity extends AppCompatActivity {
         spinner.setAdapter(adaptador);
 
     }
-
+*/
 
 
 

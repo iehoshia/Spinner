@@ -26,6 +26,8 @@ public class StudentActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btnCrearAlumno = (Button)findViewById(R.id.buttonCreateStudent);
         btnCrearAlumno.setOnClickListener(new OnClickListenerCreateStudent());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         countRecords();
         readRecords();
 

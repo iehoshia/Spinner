@@ -17,7 +17,7 @@ public class TeacherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btnCrearTeacher = (Button)findViewById(R.id.buttonCreateTeacher);
         btnCrearTeacher.setOnClickListener(new OnClickListenerCreateTeacher());
         countRecords();

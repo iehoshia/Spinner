@@ -62,19 +62,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         db.execSQL(sql3);
 
- /*       String sql4 = "DROP TABLE IF EXISTS student_course";
+        String sql4 = "DROP TABLE IF EXISTS student_course";
         db.execSQL(sql4);
 
         sql4 = "CREATE TABLE student_course " +
                 "( id INTEGER PRIMARY KEY AUTOINCREMENT, " +
 
-                "FOREIGN_KEY(students__id)REFERENCES students(id),"+
-                "FOREIGN_KEY(course_id)REFERENCES course(id)";
+                "start Date, TEXT, " +
+                "end Date TEXT, " +
+                "cost TEXT," +
+
+                "student TEXT," +
+                "course TEXT ) ";
+
+
+
+
 
 
 
         db.execSQL(sql4);
-*/
+
 
     }
 
@@ -97,10 +105,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL(sql3);
         onCreate(db);
 
- /*       String sql4 = "DROP TABLE IF EXISTS student_course";
+       String sql4 = "DROP TABLE IF EXISTS student_course";
         db.execSQL(sql4);
       onCreate(db);
-*/
+
 
 
 

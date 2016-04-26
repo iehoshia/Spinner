@@ -1,24 +1,19 @@
 package com.holamundo.app.holamundo;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
 
 /**
  * Created by Iehoshia on 28/03/2016.
  */
-public class OnClickListenerCreateTeacher implements View.OnClickListener {
+public class OnClickListenerCreateStudentCourse implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
         final Context context = v.getContext();
 
-        Intent in= new Intent(context.getApplicationContext() ,AddTeacherActivity.class);
+        Intent in= new Intent(context.getApplicationContext() ,AddStudentCourseActivity.class);
         context.startActivity(in);
 
 
